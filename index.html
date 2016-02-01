@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>hello.</title>
+    <!-- Custom CSS -->
+    <link href="css/main.css" rel="stylesheet">
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="js/clock.js"></script>
+
+    <script src="js/annyang.min.js"></script>
+
+    <script src="js/voice.js"></script>
+
+    
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+
+<body class="main" onload = "startTime()">
+
+    <div id="notifications">
+        <div class="container">
+
+            <p class="big" id="time" style="font-size:8vw;"></p>
+
+            <p id="timedesc" style="font-size:2vw;font-weight:400;color:rgba(255,255,255,0.2)"></p>
+
+            <br />
+
+            <div class="whiteLine"></div>
+
+            <br /><br />
+
+            <p style="font-size:1.5vw;font-weight:400;color:rgba(255,255,255,0.4)" >
+            wi.sh VER 0.3
+            github.com/AkiPraveen
+            </p>
+            
+
+
+        </div>
+
+
+
+        <div id = "upButton">
+            <img src="img/up.png" style="height:15px;margin-top:20px;" />
+        </div>
+    </div>
+
+    <div class="topButton" id="slider">
+        <image class="topDots" src="img/dots.png"></image>
+    </div>
+
+    <div class="container">
+        <div class="topSpace"></div>
+
+        <div class="logoContainer">
+        <p class="big"><img class="logoFull" src="img/logoFlat.png" /></p>
+        </div>
+
+
+        <input autofocus id="search" type="text">
+        <br />
+        <br />
+        <p class="smalldesc" style="margin-right:20px;cursor:pointer;">
+            
+            <span style="color:black">make a wi.sh!</span>
+            
+        </p>
+
+       
+
+        <p class="smalldesc" id="helpy" style="cursor:pointer;">
+            <img src="img/help.png" class="smallGoogle">
+             need help?
+        </p>
+
+        <div style="margin-bottom:10vw;width:100%;"></div>
+
+
+
+        <!--
+
+        <div class="col-sm-4" id="messengerLink">
+            <div class="messengerIcon">
+            </div>
+           
+
+        </div>
+        <div class="col-sm-4" id="inboxLink">
+            <div class="inboxIcon">
+            </div>
+        </div>
+        <div class="col-sm-4" id="noAlign">
+            <div class="memeIcon">
+            </div>
+        </div>
+
+        -->
+        
+
+    </div>
+
+    <div id="helpdocs" style="display:none;">
+        <div id = "downDocsButton">
+            <img src="img/whitex.png" style="height:15px;margin-top:20px; -ms-transform: rotate(180deg);-webkit-transform: rotate(180deg);transform: rotate(180deg);" />
+        </div>
+
+        
+        <table class="table table-striped table-hover "style="color:white;width:100%;font-family:Lato;margin-top:50px;">
+          <thead style="color:white;">
+            <tr style="border-bottom:3px solid rgba(0,0,0,0);font-size:12px;">
+              <th>#</th>
+              <th>syntax</th>
+              <th>desc</th>
+              <th>usage</th>
+            </tr>
+            <tr style="border-bottom:3px solid rgba(0,0,0,0);font-weight:300;font-size:16px;">
+              <th>1</th>
+              <th> -g "phrase" </th>
+              <th>google search command</th>
+              <th>-g technology news</th>
+            </tr>
+            <tr style="border-bottom:3px solid rgba(0,0,0,0);font-size:16px;">
+              <th>2</th>
+              <th>-walf "query"</th>
+              <th>Wolfram|Alpha command</th>
+              <th>-walf derivative 2x^2+3</th>
+            </tr>
+            <tr style="border-bottom:3px solid rgba(0,0,0,0);font-size:16px;">
+              <th>2</th>
+              <th>-ddg "query"</th>
+              <th>DuckDuckGo search command</th>
+              <th>-ddg java object class</th>
+            </tr>
+            <tr style="border-bottom:3px solid rgba(0,0,0,0);font-size:16px;">
+              <th>2</th>
+              <th>-bing "query"</th>
+              <th>Bing search command</th>
+              <th>-bing coffee place</th>
+            </tr>
+          </thead>
+          <!--<tbody style="background-color:rgba(0,0,0,0);">
+            <tr>
+              <td>1</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="active">
+              <td>2</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+            <tr class="active">
+              <td>3</td>
+              <td>Column content</td>
+              <td>Column content</td>
+              <td>Column content</td>
+            </tr>
+          </tbody>-->
+        </table> 
+
+
+    </div>
+
+
+    <!-- jQuery Version 1.11.1 -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- search box script -->
+    <script src="js/mySearch.js"></script>
+
+</body>
+
+</html>
