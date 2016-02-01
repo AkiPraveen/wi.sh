@@ -1,0 +1,193 @@
+/*
+@font-face {
+    font-family: myFirstFont;
+    src: url(../fonts/PixelFJVerdana12pt.ttf);
+}
+*/
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700,300);
+@import url(https://fonts.googleapis.com/css?family=Lato:400,100,300,700);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,300,700);
+
+body.main {
+	background-color:#ecf0f1;
+	font-family: 'Montserrat';
+	font-weight:300;
+}
+
+div.container {
+	margin-left:15%;
+	width:70%;
+}
+
+div.topButton {
+	background-color:#ecf0f1;
+	height:30px;
+	width:100%;
+	text-align:center;
+}
+div.topButton:active {
+	background-color:#bdc3c7;
+}
+img.topDots {
+	height:30px;
+	pointer-events:none;
+}
+
+#search {
+	margin-top:30px;
+	color:#444545;
+	/*color:black;*/
+	/*color:#bdc3c7;*/
+	font-size:6vw;
+	height:8vw;
+	background-color:rgba(0,0,0,0);
+	border:0px;
+	border-bottom:0.5px solid rgba(0,0,0,0);;
+	width:75%;
+	-webkit-transition: width 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: width 0.5s;
+    border-color:rgba(189, 195, 199,0.1);
+    font-family:QuickSand;
+}
+#search:focus {
+	font-size:6vw;
+	height:8vw;
+	outline:none;
+	width:100%;
+	border-color:rgba(0,0,0,0);;
+}
+
+p.big {
+	font-size:10vw;
+}
+p.smalldesc {
+	margin-top:10px;
+
+	font-size:11px;
+	font-weight:400;
+	float:left;
+}
+
+img.smallGoogle {
+	
+	height:16px;
+	margin-right:5px;
+}
+
+#notifications {
+	height:100%;
+	width:100%;
+	background-color:rgba(0, 0, 0,0.89);
+	position:absolute;
+	left:0;
+	top:-100%;
+	z-index:10;
+	color:white;
+	font-weight:100;
+	
+}
+
+#upButton {
+	font-family:Lato;
+	color:white;
+	position:absolute;
+	font-weight:100;
+	bottom:0;
+	height:50px;
+	width:100%;
+	text-align:center;
+}
+#upButton:active {
+	background-color:gray;
+}
+
+
+#downDocsButton {
+	font-family:Lato;
+	color:white;
+	position:absolute;
+	font-weight:100;
+	height:50px;
+	width:10%;
+	margin-left:90%;
+	text-align:center;
+	margin-bottom:50px;
+}
+#downDocsButton:active {
+	background-color:#c0392b;
+}
+
+
+
+#noAlign {
+	padding:0;
+	margin:0;
+}
+#messengerLink {
+	padding:0;
+	margin:0;
+}
+#inboxLink {
+	padding:0;
+	margin:0;
+}
+div.messengerIcon {
+	width:100%;
+	height:17vw;
+    background: url("../img/messenger.png") no-repeat left;
+    background-size: 80%;
+}
+div.inboxIcon {
+	width:100%;
+	height:17vw;
+    background: url("../img/inbox.png") no-repeat left;
+    background-size: 80%;
+}
+div.topSpace {
+	width:100%;
+	height:20vh;
+}
+#time {
+	font-family:Lato;
+	font-weight:100;
+}
+span.hour {
+	font-size:15vw;
+}
+span.minute {
+	font-size:15vw;
+}
+span.second {
+	font-size:12vw;
+}
+
+#helpdocs {
+	-webkit-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.75);
+
+	background-color:#444545;
+	position:absolute;
+	height:70vh;
+	margin-left:10%;
+	width:80%;
+
+	bottom:0px;
+
+}
+div.whiteLine {
+	width:100%;
+	background-color:rgba(255,255,255,0.2);
+	height:2px;
+}
+.logoFull {
+	height:14vw;
+	opacity:1;
+}
+.logoContainer{
+	z-index:100;
+	pointer-events:none;
+}
